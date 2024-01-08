@@ -1,0 +1,13 @@
+version: '3'
+services:
+  auth:
+    image: justbee007/auth:tagname
+    ports:
+      - "5000:5001"
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_USER=auth_user
+      - MYSQL_PASSWORD=Auth1234
+      - MYSQL_DB=auth
+      - MYSQL_PORT=3306
+      - JWT_SECRET=hello
