@@ -1,2 +1,4 @@
 /auth/venv
 /gateway/env
+venv
+*.mp4

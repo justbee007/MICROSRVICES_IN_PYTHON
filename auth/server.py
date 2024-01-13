@@ -8,14 +8,12 @@ import os
 server = Flask(__name__)
 
 # Configure SQLAlchemy
-server.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:example@localhost:8081/auth'
+server.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:example@localhost:3306/auth'
 server.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(server)
 
 # JWT configuration
-jwt_secret = "lolz"
-
-
+jwt_secret = "sarcasm"
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     email = db.Column(db.String(255), unique=True, nullable=False)

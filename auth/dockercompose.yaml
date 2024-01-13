@@ -10,4 +10,4 @@ services:
       - MYSQL_PASSWORD=Auth1234
       - MYSQL_DB=auth
       - MYSQL_PORT=3306
-      - JWT_SECRET=hello
+      - JWT_SECRET=sarcasm
