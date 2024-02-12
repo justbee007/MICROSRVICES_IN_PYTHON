@@ -7,7 +7,7 @@ This repository contains a Flask-based microservice application for video and au
 1. **Dependencies Installation**:
    - Install required Python packages using pip:
      ```bash
-     pip install Flask Flask-PyMongo Flask-SQLAlchemy pymongo pika requests
+     pip install -r requirements.txt
      ```
 
 2. **Database Setup**:
